@@ -34,13 +34,9 @@ img
     max-width: 100%;
     max-height: 100%;
 }
-
 /* #endregion Common */
 
-
-
 /* #region Utility*/
-
 .container
 {
     width: 80%;
@@ -50,9 +46,17 @@ img
 .btn-radius
 {
     background-color: transparent;
-    padding: 0.5rem 1rem;
     border-radius: 2rem;
     border: none;
+}
+
+.btn-small{
+    padding: 0.5rem 1rem;
+}
+
+.btn-large
+{
+    padding: 0.75rem 1.25rem;
 }
 /* #endregion Utility*/
 
@@ -116,8 +120,13 @@ header
     margin-bottom: 1rem;
 }
 
-.btn-hero
+.btn-hero-secondary
 {
     background-color: var(--ds-lighter);
+}
+.btn-hero-primary
+{
+    background-color: var(--ds-text-color-secondary);
+    color: var(--ds-text-color-primary);
 }
 /* #endregion hero */
