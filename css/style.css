@@ -1,55 +1,98 @@
-*{
+/* #region Common */
+:root
+{
+  /* Color Schema inside root element */
+  --ds-page-bg: white;
+
+  --ds-lighter: white;
+  --ds-primary: #3161e0;
+  --ds-text-color-primary: white;
+  --ds-text-color-secondary: #525558;
+
+}
+
+*
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style-type: none;
 }
-img{
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--ds-text-color-primary);
+}
+
+ul
+{
+  list-style: none;
+}
+
+img
+{
     max-width: 100%;
     max-height: 100%;
 }
 
-body{
-    color: #fff;
-}
-header{
-    width: 100%;
-    background-color: #3161e0;
-}
+/* #endregion Common */
+
+
+
 /* #region Utility*/
-.container{
+
+.container
+{
     width: 80%;
+    margin: 0 auto;
 }
-.button-radius{
+
+.btn-radius
+{
+    background-color: transparent;
     padding: 0.5rem 1rem;
     border-radius: 2rem;
     border: none;
 }
 /* #endregion Utility*/
 
+/* #region header*/
+header
+{
+    width: 100%;
+    background-color: var(--ds-primary);
+}
 
-.navbar{
+.navbar
+{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 8rem;
 }
-ul{
+
+.navbar ul
+{
     display:flex;
 }
-ul li{
+
+.navbar ul li
+{
     margin: 0 1rem;
 }
-.button-nav{
-    background-color: white;
-    color: #525558;
+
+.button-nav
+{
+    background-color: var(--ds-lighter);
+    color: var(--ds-text-color-secondary);
 }
+/* #endregion header*/
 
 /* #region hero */
 
 .hero-img{
     width: 100%;
-    height: 20rem;
+    height: 500px;
     background-image: url(../img/jumbo.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -64,4 +107,17 @@ ul li{
     margin: 0 auto;
 }
 
+.hero-text h1{
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.hero-text p{
+    margin-bottom: 1rem;
+}
+
+.btn-hero
+{
+    background-color: var(--ds-lighter);
+}
 /* #endregion hero */
