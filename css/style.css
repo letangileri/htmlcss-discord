@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+
+body{
+    /* background: #000; */
+    color: #fff;
+}
+header{
+    width: 100%;
+    background-color: #3161e0;
+}
+/* #region Utility*/
+.container{
+    width: 80%;
+}
+.button-radius{
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    border: none;
+}
+/* #endregion Utility*/
+
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8rem;
+
+}
+ul{
+    display:flex;
+}
+ul li{
+    margin: 0 1rem;
+}
+.button-nav{
+    background-color: white;
+    color: #525558;
+}
