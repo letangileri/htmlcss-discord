@@ -58,6 +58,16 @@ img
 {
     padding: 0.75rem 1.25rem;
 }
+
+.flex-order1
+{
+    order: 1;
+}
+
+.btn-icon{
+    margin:0.25rem;
+}
+
 /* #endregion Utility*/
 
 /* #region header*/
@@ -103,12 +113,12 @@ header
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+    justify-content: center;
 }
 
 .hero-text{
     text-align: center;
     width: 50%;
-    margin: 0 auto;
 }
 
 .hero-text h1{
@@ -130,3 +140,53 @@ header
     color: var(--ds-text-color-primary);
 }
 /* #endregion hero */
+
+/* #region card*/
+.card{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+.card-text
+{
+    color: var(--ds-text-color-secondary);
+    width: 40%;
+    padding-top: 2rem;
+}
+.card-text p{
+    margin-top: 1rem;
+    line-height: 1.5rem;
+}
+
+.background-wave{
+
+    /* background-image: url(../img/wave.svg);
+    fill: #fce57e; */
+}
+.card-vertical{
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.card-vertical-header h1, 
+.card-vertical-header p,
+.card-vertical-footer h2
+{
+    color: var(--ds-text-color-secondary);
+    text-align: center;
+
+}
+.card-vertical-header p{
+    margin-top: 1rem;
+    line-height: 1.5rem;
+}
+.btn-card-vertical-footer{
+    background-color: var(--ds-primary);
+    color: var(--ds-text-color-primary);
+}
+.card-vertical-footer button{
+    margin-top: 1rem;
+}
+
+/* #endregion card*/
