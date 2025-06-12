@@ -6,6 +6,7 @@
 
   --ds-lighter: white;
   --ds-primary: #3161e0;
+  --ds-footer-bg: #23272a;
   --ds-text-color-primary: white;
   --ds-text-color-secondary: #525558;
 
@@ -52,11 +53,20 @@ img
 
 .btn-small{
     padding: 0.5rem 1rem;
+    font-size: 1rem;
 }
 
 .btn-large
 {
     padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+}
+
+
+
+.btn-text
+{
+    vertical-align: middle;
 }
 
 .flex-order1
@@ -123,11 +133,13 @@ header
 
 .hero-text h1{
     margin-bottom: 1.5rem;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .hero-text p{
     margin-bottom: 1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 .btn-hero-secondary
@@ -148,15 +160,24 @@ header
     gap: 4rem;
     margin-top: 2rem;
 }
+.card-img{
+    width: 60%;
+}
 .card-text
 {
     color: var(--ds-text-color-secondary);
     width: 40%;
     padding-top: 2rem;
+
+}
+.card-text h2{
+    line-height: 2rem;
+    font-size: 2rem;
 }
 .card-text p{
     margin-top: 1rem;
     line-height: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .background-wave{
@@ -177,16 +198,36 @@ header
     text-align: center;
 
 }
+
+.card-vertical-header h1,
+.card-vertical-footer h2
+{
+    line-height: 2rem;
+    font-size:2rem;
+}
+
 .card-vertical-header p{
     margin-top: 1rem;
     line-height: 1.5rem;
+    font-size: 1.25rem;
 }
+
 .btn-card-vertical-footer{
     background-color: var(--ds-primary);
     color: var(--ds-text-color-primary);
 }
+
 .card-vertical-footer button{
     margin-top: 1rem;
 }
 
 /* #endregion card*/
+
+/* #region footer*/
+footer{
+    margin-top: 2rem;
+    width:100%;
+    height: 500px;
+    background-color: var(--ds-footer-bg);
+}
+/* #endregion footer*/
