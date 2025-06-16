@@ -230,4 +230,50 @@ footer{
     height: 500px;
     background-color: var(--ds-footer-bg);
 }
+
+.footer-lists{
+    display: flex;
+    gap: 2rem;
+
+}
+
+.list-lf{
+
+    padding: 2rem 0;
+}
+
+.list-lf h2{
+    margin-bottom: 1.75rem;
+    color: #5d6fac;
+}
+
+.list-lf #ita{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+}
+
+.list-rg{
+    padding: 2rem 0;
+    width: 70%;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.list-rg-item{
+    width: 50px;
+    height: 50px;
+}
+
+.list-rg-item h3{
+    color: #5d6fac;
+}
+.footer-lists-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 1rem 0;
+    border-top: 1px solid white;
+}
 /* #endregion footer*/
